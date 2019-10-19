@@ -1,10 +1,10 @@
 'use strict';
 
-let input = 0;
+let input;
 let total = 0;
 
 while (input !== null) {
-    input = prompt(`Ваше число ${total}`);
+    input = prompt('Введите число');
     if (input === null) {
         alert(`Общая сумма чисел ${total}`);
     } else if (Number.isNaN(Number(input))) {
@@ -13,3 +13,15 @@ while (input !== null) {
         total += Number(input);
     }
 }
+
+// OR
+//let input;
+//let total = 0;
+//while (input !== null) {
+//input = prompt('Введите число');
+//if (input === null) {
+//break;
+//}
+//total += Number(input);
+//}
+//alert(`Общая сумма чисел равна ${total}`);
